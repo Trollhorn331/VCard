@@ -1,0 +1,81 @@
+/* Page centrée grâce à Flexbox */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carte en Flexbox verticale */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espace automatique entre les blocs */
+}
+
+/* Photo centrée avec Flexbox */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0078ff;
+}
+
+/* Bloc d'infos aligné en colonne avec Flexbox */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 5px 0 15px;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Liens sociaux avec Flexbox */
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #0078ff;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin: 5px 0;
+    text-align: center;
+}
